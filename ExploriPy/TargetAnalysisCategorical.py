@@ -63,12 +63,12 @@ class TargetAnalysisCategorical:
 		this_dir, filename = os.path.split(pth[0])
 		
 		if self.target in self.CategoricalFeatures:
-			filename = 'HTMLTemplate\\dist\\HTMLTemplate_target_Categorical.html'
+			filename = 'HTMLTemplate/dist/HTMLTemplate_target_Categorical.html'
 			this_dir, this_filename = os.path.split(__file__)
 			Template_PATH = os.path.join(this_dir, filename)
 			
 		elif self.target in self.ContinuousFeatures:
-			filename = 'HTMLTemplate\\dist\\HTMLTemplate_target_Continuous.html'
+			filename = 'HTMLTemplate/dist/HTMLTemplate_target_Continuous.html'
 			this_dir, this_filename = os.path.split(__file__)
 			Template_PATH = os.path.join(this_dir, filename)
 
