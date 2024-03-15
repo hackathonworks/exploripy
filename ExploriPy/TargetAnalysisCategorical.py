@@ -61,17 +61,15 @@ class TargetAnalysisCategorical:
 		'''
 		pth = pd.__path__
 		this_dir, filename = os.path.split(pth[0])
-
+		
 		if self.target in self.CategoricalFeatures:
 			filename = 'HTMLTemplate\\dist\\HTMLTemplate_target_Categorical.html'
-			if platform.system() == 'Windows':			
+			if platform.system() == 'Windows':
 				this_dir, this_filename = os.path.split(__file__)
 				Template_PATH = os.path.join(this_dir, filename)
-			#if platform.system() =='Linux':
-			else:
+			else:  # Changed indentation to match the corresponding block
 				filename = 'ExploriPy/HTMLTemplate/dist/HTMLTemplate_target_Categorical.html'
 				Template_PATH = os.path.join(this_dir, filename)
-
 		elif self.target in self.ContinuousFeatures:
 			filename = 'HTMLTemplate\\dist\\HTMLTemplate_target_Continuous.html'
 			if platform.system() =='Linux':
