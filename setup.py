@@ -21,7 +21,7 @@ setup(name='ExploriPy',
           'seaborn',
           'matplotlib',
           'statsmodels',
-          'sklearn',
+          'scikit-learn',
 		  'tqdm'
       ],
       include_package_data=True,
