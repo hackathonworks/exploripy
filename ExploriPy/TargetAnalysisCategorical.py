@@ -100,7 +100,7 @@ class TargetAnalysisCategorical:
 		elif self.target in self.ContinuousFeatures:
 			html = template.render(title = self.title)
 			
-		out_filename = os.path.join(this_dir, 'HTMLTemplate\\dist\\result.html')
+		out_filename = os.path.join(this_dir, 'HTMLTemplate/dist/result.html')
 		if platform.system() == 'Linux':
 			out_filename = os.path.join(this_dir, 'ExploriPy/HTMLTemplate/dist/result.html')
 		with io.open(out_filename, mode='w', encoding='utf-8') as f:
