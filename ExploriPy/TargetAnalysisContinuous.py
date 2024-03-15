@@ -66,14 +66,8 @@ class TargetAnalysisContinuous:
 		this_dir, filename = os.path.split(pth[0])
 
 		filename = 'HTMLTemplate\\dist\\HTMLTemplate_target_Continuous.html'
-		
-        if platform.system() == 'Windows':
-			this_dir, this_filename = os.path.split(__file__)
-			Template_PATH = os.path.join(this_dir, filename)
-        #if platform.system() == 'Linux':
-        else:
-			filename = 'ExploriPy/HTMLTemplate/dist/HTMLTemplate_target_Continuous.html'
-			Template_PATH = os.path.join(this_dir, filename)
+		this_dir, this_filename = os.path.split(__file__)
+		Template_PATH = os.path.join(this_dir, filename)
 		
 		with open(Template_PATH) as file:
 			template = Template(file.read())			
