@@ -96,7 +96,7 @@ class TargetAnalysisContinuous:
 							#,SummarizeTwoWayAnova_list = self.SummarizeTwoWayAnova()
 					   )
 			
-		out_filename = os.path.join(this_dir, 'HTMLTemplate\\dist\\result.html')
+		out_filename = os.path.join(this_dir, 'HTMLTemplate/dist/result.html')
 		if platform.system() =='Linux':
 			out_filename = os.path.join(this_dir, 'ExploriPy/HTMLTemplate/dist/result.html')
 
