@@ -65,7 +65,7 @@ class TargetAnalysisContinuous:
 		pth = pd.__path__
 		this_dir, filename = os.path.split(pth[0])
 
-		filename = 'HTMLTemplate\\dist\\HTMLTemplate_target_Continuous.html'
+		filename = 'HTMLTemplate/dist/HTMLTemplate_target_Continuous.html'
 		this_dir, this_filename = os.path.split(__file__)
 		Template_PATH = os.path.join(this_dir, filename)
 		
